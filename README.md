@@ -33,18 +33,25 @@ This will install packages like `numpy`, `pandas`, `requests`, and more.
 
 ## Usage
 
-To start the network sniffer, run:
+To start capturing packets immediately, you can run the script and see live outputs:
 
 ```bash
 python main.py
 ```
 
-You can specify various options and filters by using command-line arguments. For more detailed usage instructions, refer to the help option:
+If you wish to save captured packets to a CSV file, ensure that the `save_packets_to_file()` function is called in the script:
 
-```bash
-python main.py --help
+```python
+save_packets_to_file()
+``` 
+
+Read the section about the functions in the script to understand how to capture packets live by calling:
+
+```python
+capture_from_network()
 ```
 
+Refer to the function documentation within the code for detailed descriptions.
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request for review.
